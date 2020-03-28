@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddTableViewCell" rowHeight="70" id="rhd-cx-Pda" customClass="AddTableViewCell" customModule="Between" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rhd-cx-Pda" id="evd-Bs-2MX">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="heT-9q-FiE">
+                        <rect key="frame" x="20" y="13" width="25" height="24"/>
+                        <color key="tintColor" red="1" green="0.39374096580000001" blue="0.52475488319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="heT-9q-FiE" secondAttribute="height" id="RQB-hQ-UEb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a special day" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BBu-L0-G4T">
+                        <rect key="frame" x="53" y="15" width="144" height="20"/>
+                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="15"/>
+                        <color key="textColor" red="0.86011529060000003" green="0.86011529060000003" blue="0.86011529060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="heT-9q-FiE" firstAttribute="leading" secondItem="evd-Bs-2MX" secondAttribute="leading" constant="20" id="04Z-rY-N4V"/>
+                    <constraint firstAttribute="bottom" secondItem="heT-9q-FiE" secondAttribute="bottom" constant="12.5" id="2w0-x1-992"/>
+                    <constraint firstItem="heT-9q-FiE" firstAttribute="top" secondItem="evd-Bs-2MX" secondAttribute="top" constant="12.5" id="7KN-jm-o9Y"/>
+                    <constraint firstItem="BBu-L0-G4T" firstAttribute="leading" secondItem="heT-9q-FiE" secondAttribute="trailing" constant="8" id="9wn-PZ-Qvd"/>
+                    <constraint firstItem="BBu-L0-G4T" firstAttribute="centerY" secondItem="heT-9q-FiE" secondAttribute="centerY" id="Ea2-V9-t1J"/>
+                    <constraint firstItem="BBu-L0-G4T" firstAttribute="width" secondItem="evd-Bs-2MX" secondAttribute="width" multiplier="0.45" id="H5J-jb-fyC"/>
+                    <constraint firstItem="heT-9q-FiE" firstAttribute="height" secondItem="evd-Bs-2MX" secondAttribute="height" multiplier="0.5" id="eG9-pJ-SJ8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="9qM-70-bcK"/>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+            <point key="canvasLocation" x="131" y="-20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
