@@ -1,0 +1,30 @@
+PODS:
+  - KeychainSwift (17.0.0)
+  - Realm (3.19.0):
+    - Realm/Headers (= 3.19.0)
+  - Realm/Headers (3.19.0)
+  - RealmSwift (3.19.0):
+    - Realm (= 3.19.0)
+  - SCLAlertView (0.8)
+
+DEPENDENCIES:
+  - KeychainSwift
+  - RealmSwift
+  - SCLAlertView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KeychainSwift
+    - Realm
+    - RealmSwift
+    - SCLAlertView
+
+SPEC CHECKSUMS:
+  KeychainSwift: 9f43f562dffc88af6efadb57d74b14c598eb337f
+  Realm: 995d585bcf699aaff226715886c849a29dd3d07f
+  RealmSwift: 35f284a537989f2187b413e5917091948cb87a3f
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+
+PODFILE CHECKSUM: 23ac995a32b3480c37fea3f2acc97695500e2c07
+
+COCOAPODS: 1.7.5
