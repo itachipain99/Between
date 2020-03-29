@@ -13,7 +13,7 @@ DEPENDENCIES:
   - SCLAlertView
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - KeychainSwift
     - Realm
     - RealmSwift
@@ -27,4 +27,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 23ac995a32b3480c37fea3f2acc97695500e2c07
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.1
