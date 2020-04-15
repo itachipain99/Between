@@ -240,6 +240,7 @@
                         <outlet property="tfEmail" destination="xjV-qI-6WY" id="nif-y8-EI5"/>
                         <outlet property="tfPassword" destination="FaR-CN-74r" id="xOs-2W-KgN"/>
                         <outlet property="tfSelect" destination="h5y-rP-Tvf" id="fcb-Dy-X2d"/>
+                        <outlet property="view1" destination="xYx-CA-RWQ" id="pjc-Ae-5gY"/>
                         <outlet property="viewCircleLoad" destination="Dcv-Nx-asO" id="kgr-bf-hgQ"/>
                         <outlet property="viewSelect" destination="lTb-H5-daR" id="zrv-gp-IUa"/>
                     </connections>

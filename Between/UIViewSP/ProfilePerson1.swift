@@ -19,6 +19,8 @@ class ProfilePerson1 : UIView {
     private var img1 : UIImage = UIImage(systemName: "person.circle.fill")!
     private var img2 : UIImage = UIImage(systemName: "person.circle.fill")!
     
+    var firstPoint : CGPoint?
+    
     @IBOutlet var Profile: UIView!
     @IBOutlet weak var viewProfile: UIView!
     @IBOutlet weak var viewPhone: UIView!
@@ -36,6 +38,9 @@ class ProfilePerson1 : UIView {
         super.init(frame: frame)
         Bundle.main.loadNibNamed("ProfilePerson1", owner: self, options: nil)
         customForm()
+        firstPoint = viewProfile.center
+        print(firstPoint!.x,firstPoint!.y)
+        
     }
     
     required init?(coder: NSCoder) {
@@ -71,6 +76,19 @@ class ProfilePerson1 : UIView {
     @IBAction func btn_x(_ sender: Any) {
         Profile.removeFromSuperview()
     }
+    
+    @IBAction func pan_Gesture(_ sender: UIPanGestureRecognizer) {
+        let posit = sender.translation(in: Profile)
+        sender.view?.transform = (sender.view?.transform.translatedBy(x: posit.x, y: posit.y))!
+        print(posit.x,posit.y)
+        sender.setTranslation(CGPoint.zero, in: Profile)
+        if sender.state == .ended {
+            UIView.animate(withDuration: 0.2) {
+                self.viewProfile.transform = CGAffineTransform(translationX: 0.0, y: 0.0)
+            }
+        }
+    }
+    
     // so library
     @IBAction func btn_ImgPs(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable( .photoLibrary){

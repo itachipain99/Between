@@ -186,6 +186,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="uVz-D1-Pu8" secondAttribute="height" id="V4z-Uo-bPi"/>
                                         </constraints>
+                                        <connections>
+                                            <segue destination="WFs-A9-AUH" kind="modal" modalPresentationStyle="fullScreen" id="qmC-PF-Bis"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14541694099999999" green="0.14541694099999999" blue="0.14541694099999999" alpha="0.48140517980000003" colorSpace="custom" customColorSpace="sRGB"/>
@@ -276,14 +279,23 @@
                             <state key="normal" title="February 2020"/>
                         </button>
                         <rightBarButtonItems>
-                            <barButtonItem style="plain" systemItem="add" id="4km-VT-qUI"/>
+                            <barButtonItem style="plain" id="njH-lk-m48">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xib-pr-CvK">
+                                    <rect key="frame" x="341" y="11" width="18" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="plus" catalog="system"/>
+                                    <connections>
+                                        <action selector="btn_add:" destination="IcF-9l-pxt" eventType="touchUpInside" id="gTi-8v-A8e"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
                             <barButtonItem image="list.bullet" catalog="system" style="plain" id="KaD-wc-F5R"/>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCR-FN-BAO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5881" y="794"/>
+            <point key="canvasLocation" x="7061.6000000000004" y="793.8530734632684"/>
         </scene>
         <!--Special Days View Controller-->
         <scene sceneID="e0Y-Or-13j">
@@ -1048,6 +1060,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="WFs-A9-AUH" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hJM-6P-3hu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="apI-uj-9JP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1060,7 +1073,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7z5-b9-rQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4939" y="794"/>
+            <point key="canvasLocation" x="5860" y="794"/>
         </scene>
     </scenes>
     <resources>
@@ -1073,6 +1086,7 @@
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
         <image name="photo.fill.on.rectangle.fill" catalog="system" width="64" height="48"/>
         <image name="pin.fill" catalog="system" width="58" height="64"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="EPJ-0U-5pD"/>

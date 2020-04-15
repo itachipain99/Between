@@ -170,6 +170,7 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstItem="Sk4-3e-ciX" firstAttribute="centerX" secondItem="csB-FZ-Qw3" secondAttribute="centerX" id="1PP-Yj-yGW"/>
                         <constraint firstItem="5fQ-Hz-VUp" firstAttribute="centerY" secondItem="ady-Is-ki6" secondAttribute="centerY" multiplier="0.1" id="4j2-3e-Ypx"/>
@@ -203,6 +204,9 @@
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="xic-Xf-815" appends="YES" id="HGr-Vp-FLD"/>
+                    </connections>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.33333333333333331" alpha="0.60249892979452058" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,6 +222,11 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="153.62318840579712" y="98.4375"/>
         </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="xic-Xf-815">
+            <connections>
+                <action selector="pan_Gesture:" destination="-1" id="abJ-7M-gO1"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
     <resources>
         <image name="imageCover" width="2347" height="4165"/>

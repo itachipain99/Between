@@ -6,7 +6,7 @@ target 'Between' do
   use_frameworks!
 
   # Pods for Between
-    pod 'SCLAlertView'
     pod 'RealmSwift'
-    pod 'KeychainSwift'
+    pod 'KeychainSwift'	
+    pod 'JTAppleCalendar'
 end

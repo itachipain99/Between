@@ -24,6 +24,7 @@ struct Keys {
 let sb = UIStoryboard(name: "Main", bundle: nil)
 class ViewController: UIViewController {
 
+    @IBOutlet weak var view1: CustomUIView!
     @IBOutlet weak var viewSelect: UIView!
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!

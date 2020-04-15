@@ -20,14 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
        // print(Realm.Configuration.defaultConfiguration.fileURL!)
         print( Realm.Configuration.defaultConfiguration.fileURL!)
-        let filURL = URL(fileURLWithPath: "/Users/nguyenminhhieu/Desktop/Between/DatabaseApp/database.realm")
-        Realm.Configuration.defaultConfiguration = config
-        do{
-            Realm.Configuration.defaultConfiguration.fileURL! = filURL
-        }
-        catch{
-             print(error)
-        }
+//        let filURL = URL(fileURLWithPath: "/Users/nguyenminhhieu/Desktop/Between/DatabaseApp/database.realm")
+//        Realm.Configuration.defaultConfiguration = config
+//        do{
+//            Realm.Configuration.defaultConfiguration.fileURL! = filURL
+//        }
+//        catch{
+//             print(error)
+//        }
         let configCheck = Realm.Configuration()
         do {
             let fileUrlIs = try schemaVersionAtURL(configCheck.fileURL!)

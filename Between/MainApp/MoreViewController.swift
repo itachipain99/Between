@@ -10,6 +10,9 @@ import UIKit
 
 class MoreViewController: UIViewController {
 
+    
+    @IBOutlet weak var imgSetting: UIImageView!
+    
     @IBOutlet weak var moreTableView: UITableView!{
         didSet{
             self.moreTableView.dataSource = self
@@ -17,8 +20,16 @@ class MoreViewController: UIViewController {
         }
     }
     
+    var g : CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
+            self.g += 45
+            UIView.animate(withDuration: 0.3) {
+                self.imgSetting.layer.transform = CATransform3DMakeRotation(CGFloat(M_PI)*self.g/180, 0, 0, 1)
+            }
+        }
     }
     
 
